@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<script src="matrix.js"></script>-->
+    <style>
+        * {
+            margin: 0;
+        }
+    </style>
+    <title>Matrix</title>
+</head>
+<body>
+    <canvas id="matrix" width="1000" height="500">Sorry Your Browser Doesn't Support It.</canvas>
+    <script>
+        var cltWidth = document.documentElement.clientWidth;
+        var cltHeight = document.documentElement.clientHeight;
+
+        document.getElementById('matrix').width = cltWidth;
+        document.getElementById('matrix').height = cltHeight;
+
+        var script = document.createElement('script');
+        script.setAttribute('src', 'matrix.js');
+        document.getElementsByTagName('head')[0].appendChild(script);
+    </script>
+</body>
+</html>
